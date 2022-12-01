@@ -10,6 +10,15 @@ struct karta {
 
 void sort(struct karta talia[], int talia_size);
 void giveCards(struct karta *maintalia, struct karta *playertalia, int liczba_elementow);
+bool isHavePair(struct karta *talia, int liczba_elementow);
+bool isHaveTwoPairs(struct karta *talia, int liczba_elementow);
+bool isHaveSet(struct karta *talia, int liczba_elementow);
+bool isHaveStreet(struct karta *talia, int liczba_elementow);
+bool isHaveFlash(struct karta *talia, int liczba_elementow);
+bool isHaveFullHouse(struct karta *talia, int liczba_elementow);
+bool isHaveKare(struct karta *talia, int liczba_elementow);
+bool isHaveStreetFlash(struct karta *talia, int liczba_elementow);
+bool isHaveFlashRoyal(struct karta *talia, int liczba_elementow);
 int GetCombinationValue(struct karta* talia, int liczba_elementow);
 void printPlayerCards(struct karta* talia, int liczba_elementow);
 
